@@ -1,7 +1,30 @@
 aid: lucidact
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/lucidact.png
 name: LucidAct
-description: LucidAct is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  LucidAct (Lucidact Health) is an AI-powered care management platform operating
+  in the healthcare technology and digital health vertical. The company builds
+  software that streamlines patient care coordination and clinical workflows,
+  using artificial intelligence to automate administrative tasks, support
+  clinical decision-making, and improve patient engagement and population-health
+  outcomes for healthcare organizations. LucidAct was surfaced as a portfolio
+  company of 500 Global and added to the API Evangelist network for enrichment.
+  As of this enrichment pass no public developer portal, API documentation,
+  OpenAPI definition, SDKs, or /.well-known discovery surface could be found —
+  the marketing site (www.lucidact.com) returns 403 on developer and well-known
+  paths — so this profile currently carries only the provider's probed domain
+  security posture alongside its identity.
 url: https://raw.githubusercontent.com/api-evangelist/lucidact/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +34,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Healthcare
+- Digital Health
+- Care Management
+- Artificial Intelligence
+- Clinical Workflow
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/lucidact-domain-security.yml
 - type: Website
   url: https://lucidact.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
